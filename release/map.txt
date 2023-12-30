@@ -1,0 +1,474 @@
+Room Backstage:
+Alias: nc_cppl_backstage
+File: Games/netsplit/locations/net/city/cpp_lounge/backstage/backstage.nrmn
+|
+|- Connectors:
+|__ nc_cppl_bs_door_sw, South West Door,  File: Games/netsplit/locations/net/city/cpp_lounge/backstage/connectors.nrmn
+|  |__ Destination: net_city_cpp_lounge
+|
+|
+|- Events:
+|__ b3950e58-974a-4757-98c2-850bf83a0211, enter|look,  File: Games/netsplit/locations/net/city/cpp_lounge/backstage/backstage.nrmn
+|
+|
+|- Objects:
+|__ Vanity (nc_cppl_bs_vanity),  File: Games/netsplit/locations/net/city/cpp_lounge/backstage/vanity.nrmn
+|__ Mirrors (nc_cppl_bs_mirrors),  File: Games/netsplit/locations/net/city/cpp_lounge/backstage/mirrors.nrmn
+|__ Couch (nc_cppl_bs_couch),  File: Games/netsplit/locations/net/city/cpp_lounge/backstage/couch.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (8ae40ae9-4b71-4e3d-a1f1-31869601a958)
+|
+
+Room Bedroom:
+Alias: bedroom
+File: Games/netsplit/locations/house/bedroom/bedroom.nrmn
+|
+|- Connectors:
+|__ bedroom_door_e, Door,  File: Games/netsplit/locations/house/bedroom/connectors.nrmn
+|  |__ Destination: hall
+|
+|
+|- Events:
+|__ 063cc829-6bd0-4272-a052-50fb33c72a59, enter|look,  File: Games/netsplit/locations/house/bedroom/bedroom.nrmn
+|
+|
+|- Objects:
+|__ Desk (br_desk),  File: Games/netsplit/locations/house/bedroom/desk.nrmn
+|__ Bed (br_bed),  File: Games/netsplit/locations/house/bedroom/bed.nrmn
+|__ Poster (br_poster),  File: Games/netsplit/locations/house/bedroom/poster.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (fa003051-3453-4f39-a110-3f99ba89b8c2)
+|
+
+Room CPP Lounge:
+Alias: net_city_cpp_lounge
+File: Games/netsplit/locations/net/city/cpp_lounge/cpp_lounge.nrmn
+|- Attributes:
+|__ band_playing, false
+|
+|- Connectors:
+|__ nc_cppl_door_n, North Door,  File: Games/netsplit/locations/net/city/cpp_lounge/connectors.nrmn
+|  |__ Destination: nc_cppl_restroom
+|__ nc_cppl_door_s, Exit Door,  File: Games/netsplit/locations/net/city/cpp_lounge/connectors.nrmn
+|  |__ Destination: net_city_center
+|__ nc_cppl_door_ne, Backstage Door,  File: Games/netsplit/locations/net/city/cpp_lounge/connectors.nrmn
+|  |__ Destination: nc_cppl_backstage
+|
+|
+|- Events:
+|__ 70ea2c29-cb95-4537-a05c-c33550437035, enter|look,  File: Games/netsplit/locations/net/city/cpp_lounge/cpp_lounge.nrmn
+|
+|
+|- Objects:
+|__ Booths (nc_cppl_booths),  File: Games/netsplit/locations/net/city/cpp_lounge/booths.nrmn
+|__ Table (nc_cppl_table),  File: Games/netsplit/locations/net/city/cpp_lounge/table.nrmn
+|__ Stage (nc_cppl_stage),  File: Games/netsplit/locations/net/city/cpp_lounge/stage.nrmn
+|__ Band (nc_cppl_band),  File: Games/netsplit/locations/net/city/cpp_lounge/band.nrmn
+|
+|
+|
+|
+|
+|
+|- NPCs:
+|__  (nc_cppl_hacker),  File:
+|- Attributes:
+|__ topic, greet
+|__  (nc_cppl_singer),  File:
+|
+|
+|- Commands:
+|__ Syntax:  look|l (f9a7c32b-8dd8-47d9-b0be-a2fb6a6c6b53)
+|
+
+Room City Center:
+Alias: net_city_center
+File: Games/netsplit/locations/net/city/center/center.nrmn
+|
+|- Connectors:
+|__ nccenter_portal_w, West Portal,  File: Games/netsplit/locations/net/city/center/connectors.nrmn
+|  |__ Destination: net_hub
+|__ nccenter_door_n, CPP Lounge Entrance,  File: Games/netsplit/locations/net/city/center/connectors.nrmn
+|  |__ Destination: net_city_cpp_lounge
+|__ nccenter_door_s, Net Hub,  File: Games/netsplit/locations/net/city/center/connectors.nrmn
+|  |__ Destination: net_city_nethub1
+|
+|
+|- Events:
+|__ 88b71fe0-0d46-40dc-8821-d641ff7d76ab, enter|look,  File: Games/netsplit/locations/net/city/center/center.nrmn
+|
+|
+|- Objects:
+|__ Buildings (nccenter_buildings),  File: Games/netsplit/locations/net/city/center/buildings.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (ce17f882-2d75-4b37-8865-98786ecff0ee)
+|
+
+Room Control Room:
+Alias: ncc_nethub1_hub_ctrl
+File: Games/netsplit/locations/net/city/nethub1/control_room/control_room.nrmn
+|
+|- Connectors:
+|__ ncc_nethub1_hub_ctrl_door_n, North Door,  File: Games/netsplit/locations/net/city/nethub1/control_room/connectors.nrmn
+|  |__ Destination: net_city_nethub1
+|
+|
+|- Events:
+|__ 1574e629-2a98-4761-b849-b14ec645e922, enter|look,  File: Games/netsplit/locations/net/city/nethub1/control_room/control_room.nrmn
+|
+|
+|- Objects:
+|__ Screens (ncc_nethub1_hub_ctrl_screens),  File: Games/netsplit/locations/net/city/nethub1/control_room/screens.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (e34ae44a-9bb0-4efa-b7bd-203b2c40908b)
+|
+
+Room Hall:
+Alias: hall
+File: Games/netsplit/locations/house/hall/hall.nrmn
+|
+|- Connectors:
+|__ hl_door_w, Door,  File: Games/netsplit/locations/house/hall/connectors.nrmn
+|  |__ Destination: bedroom
+|__ hl_path_n, North,  File: Games/netsplit/locations/house/hall/connectors.nrmn
+|  |__ Destination: livingroom
+|
+|
+|- Events:
+|__ cf772da6-0347-497e-8604-982326f320f7, enter|look,  File: Games/netsplit/locations/house/hall/hall.nrmn
+|
+|
+|- Objects:
+|__ Lights (hl_lights),  File: Games/netsplit/locations/house/hall/lights.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (0ba78e4a-0c4d-410f-a580-a18dd86ac904)
+|
+
+Room Kitchen:
+Alias: kitchen
+File: Games/netsplit/locations/house/kitchen/kitchen.nrmn
+|
+|- Connectors:
+|__ ki_door_e, Door,  File: Games/netsplit/locations/house/kitchen/connectors.nrmn
+|  |__ Destination: livingroom
+|
+|
+|- Events:
+|__ e8a07fdb-7886-4755-ae44-0b18cb6dfa62, enter|look,  File: Games/netsplit/locations/house/kitchen/kitchen.nrmn
+|
+|
+|- Objects:
+|__ Counter (ki_counter),  File: Games/netsplit/locations/house/kitchen/counter.nrmn
+|__ Food Prep Unit (ki_foodprep),  File: Games/netsplit/locations/house/kitchen/food_prep.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (ee4c96d1-e4e0-4c24-bd8c-a130a3d173e2)
+|
+
+Room Library:
+Alias: net_library
+File: Games/netsplit/locations/net/library/library/net_library.nrmn
+|
+|- Connectors:
+|__ nlib_path_n, North Section,  File: Games/netsplit/locations/net/library/library/connectors.nrmn
+|  |__ Destination: net_library_n
+|__ nlib_path_e, East Section,  File: Games/netsplit/locations/net/library/library/connectors.nrmn
+|  |__ Destination: net_library_e
+|__ nlib_door_s, Library Exit,  File: Games/netsplit/locations/net/library/library/connectors.nrmn
+|  |__ Destination: net_library_front
+|__ nlib_path_w, West Section,  File: Games/netsplit/locations/net/library/library/connectors.nrmn
+|  |__ Destination: net_library_w
+|__ nlib_stairs, Stairs,  File: Games/netsplit/locations/net/library/library/connectors.nrmn
+|  |__ Destination: net_library_2
+|
+|
+|- Events:
+|__ 1fc4631a-f84d-4919-ab22-e125e716b774, enter|look,  File: Games/netsplit/locations/net/library/library/net_library.nrmn
+|
+|
+|- Objects:
+|__ Front Desk (nlib_desk),  File: Games/netsplit/locations/net/library/library/front_desk.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (1850644c-e7c0-4af7-9e33-e44cd26f21f7)
+|
+
+Room Library:
+Alias: net_library_2
+File: Games/netsplit/locations/net/library/library/floor_2/floor_2.nrmn
+|
+|- Connectors:
+|__ nlib_2_stairs, Stairs,  File: Games/netsplit/locations/net/library/library/floor_2/connectors.nrmn
+|  |__ Destination: net_library
+|
+|
+|- Events:
+|__ cff293e1-d1c2-4bec-ad1a-e23a269375eb, enter|look,  File: Games/netsplit/locations/net/library/library/floor_2/floor_2.nrmn
+|
+|
+|- Objects:
+|__ Shelves (nlib2_shelves),  File: Games/netsplit/locations/net/library/library/floor_2/shelves.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (fecb2480-d4b0-47a9-92c2-9f497a13847d)
+|
+
+Room Library:
+Alias: net_library_e
+File: Games/netsplit/locations/net/library/library/east/east.nrmn
+|
+|- Connectors:
+|__ nlibe_path_w, Library,  File: Games/netsplit/locations/net/library/library/east/connectors.nrmn
+|  |__ Destination: net_library
+|
+|
+|- Events:
+|__ 8c391517-ab8b-414b-8810-ed3f2fc1317b, enter|look,  File: Games/netsplit/locations/net/library/library/east/east.nrmn
+|
+|
+|- Objects:
+|__ Shelves (nlibe_shelves),  File: Games/netsplit/locations/net/library/library/east/shelves.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (ac720bac-e5a8-4bb0-a99e-c1f2c7048968)
+|
+
+Room Library:
+Alias: net_library_front
+File: Games/netsplit/locations/net/library/net_library_front.nrmn
+|
+|- Connectors:
+|__ nlibf_door_n, Library Entrance,  File: Games/netsplit/locations/net/library/connectors.nrmn
+|  |__ Destination: net_library
+|__ nlibf_portal_s, South Portal,  File: Games/netsplit/locations/net/library/connectors.nrmn
+|  |__ Destination: net_hub
+|
+|
+|- Events:
+|__ 28419af3-3ee4-450e-a70f-6e1892321a02, enter|look,  File: Games/netsplit/locations/net/library/net_library_front.nrmn
+|__ a2b0a6e7-fa3d-4e1d-80a8-73d88d1cbad4, examine_lib,  File: Games/netsplit/locations/net/library/net_library_front.nrmn
+|
+|
+|
+|
+|- Commands:
+|__ Syntax:  look|l (35fd4aca-273a-4f84-b2ed-a6116165163d)
+|__ Syntax:  *x* lib*|*x* dome* (07eb5560-f0a3-43fe-86bf-43cf0c3f7050)
+|
+
+Room Library:
+Alias: net_library_n
+File: Games/netsplit/locations/net/library/library/north/north.nrmn
+|
+|- Connectors:
+|__ nlibn_path_s, Entrance,  File: Games/netsplit/locations/net/library/library/north/connectors.nrmn
+|  |__ Destination: net_library
+|
+|
+|- Events:
+|__ c9095f71-60ab-4549-883d-5d98a612ead2, enter|look,  File: Games/netsplit/locations/net/library/library/north/north.nrmn
+|
+|
+|- Objects:
+|__ Shelves (nlibn_shelves),  File: Games/netsplit/locations/net/library/library/north/shelves.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (c8621ef1-73d1-444f-96f2-07a7a567052e)
+|
+
+Room Library:
+Alias: net_library_w
+File: Games/netsplit/locations/net/library/library/west/west.nrmn
+|
+|- Connectors:
+|__ nlibw_path_w, Library,  File: Games/netsplit/locations/net/library/library/west/connectors.nrmn
+|  |__ Destination: net_library
+|
+|
+|- Events:
+|__ 28c327d4-32dd-482e-97f7-cf0196e76272, enter|look,  File: Games/netsplit/locations/net/library/library/west/west.nrmn
+|
+|
+|- Objects:
+|__ Chairs (nlibw_chairs),  File: Games/netsplit/locations/net/library/library/west/chairs.nrmn
+|
+|
+|
+|
+|- NPCs:
+|__  (nlibw_robot),  File:
+|- Attributes:
+|__ topic, hacked
+|
+|
+|- Commands:
+|__ Syntax:  look|l (49e576ab-088a-4dbc-9491-3d85d2ea7053)
+|
+
+Room Livingroom:
+Alias: livingroom
+File: Games/netsplit/locations/house/livingroom/livingroom.nrmn
+|
+|- Connectors:
+|__ lr_path_s, Hall Entrance,  File: Games/netsplit/locations/house/livingroom/connectors.nrmn
+|  |__ Destination: hall
+|__ lr_door_w, Door,  File: Games/netsplit/locations/house/livingroom/connectors.nrmn
+|  |__ Destination: kitchen
+|
+|
+|- Events:
+|__ d9179e74-47b1-4d36-8060-dca4d76c24ea, enter|look,  File: Games/netsplit/locations/house/livingroom/livingroom.nrmn
+|
+|
+|- Objects:
+|__ Couch (lr_couch),  File: Games/netsplit/locations/house/livingroom/couch.nrmn
+|__ Windows (lr_windows),  File: Games/netsplit/locations/house/livingroom/windows.nrmn
+|__ Television (lr_tv),  File: Games/netsplit/locations/house/livingroom/tv.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (de42561b-adf6-49ef-9f60-c108a5c54442)
+|
+
+Room Net Home:
+Alias: net_home
+File: Games/netsplit/locations/net/home/home.nrmn
+|
+|- Connectors:
+|__ nh_port_bedroom, Bedroom Portal,  File: Games/netsplit/locations/net/home/connectors.nrmn
+|__ nh_port_hub, South Hub Portal,  File: Games/netsplit/locations/net/home/connectors.nrmn
+|  |__ Destination: net_hub
+|
+|
+|- Events:
+|__ 8bca0349-c7a7-4b47-b80a-10d5df296215, enter|look,  File: Games/netsplit/locations/net/home/home.nrmn
+|
+|
+|
+|
+|- Commands:
+|__ Syntax:  look|l (ee8e0daa-d1ed-4bfa-8254-5559789ace77)
+|
+
+Room Net Hub 01:
+Alias: net_city_nethub1
+File: Games/netsplit/locations/net/city/nethub1/nethub1.nrmn
+|
+|- Connectors:
+|__ ncc_nethub1_door_n, North Door,  File: Games/netsplit/locations/net/city/nethub1/connectors.nrmn
+|  |__ Destination: net_city_center
+|__ ncc_nethub1_door_s, South Door,  File: Games/netsplit/locations/net/city/nethub1/connectors.nrmn
+|  |__ Destination: ncc_nethub1_hub_ctrl
+|
+|
+|- Events:
+|__ 10fe9b96-8776-45b8-8723-371ceb65e22c, enter,  File: Games/netsplit/locations/net/city/nethub1/nethub1.nrmn
+|  |__ ActionSet: 610dd030-682f-4d4a-9f78-b46aa1612f2e
+|  |  |__ Action: 9139dee0-1a38-44c6-9391-65e436411b40, Type=travel
+|__ 8fbf7fd7-4902-4a79-af05-beaf46fbbbf2, look,  File: Games/netsplit/locations/net/city/nethub1/nethub1.nrmn
+|  |__ ActionSet: fc3cf917-7b28-4c44-8389-3ad0247f8282
+|  |  |__ Action: 4a6b8681-343a-4cf3-ae9d-fc6dd96a4d8e, Type=travel
+|__ 47f3f309-892e-45d9-a0fa-b7980225990e, enter|look,  File: Games/netsplit/locations/net/city/nethub1/nethub1.nrmn
+|
+|
+|- Objects:
+|__ Hub (ncc_nethub1_hub),  File: Games/netsplit/locations/net/city/nethub1/hub.nrmn
+|__ Benches (ncc_nethub1_benches),  File: Games/netsplit/locations/net/city/nethub1/benches.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (9dc415cf-4270-46eb-8b59-48406a9c128b)
+|
+
+Room Restroom:
+Alias: nc_cppl_restroom
+File: Games/netsplit/locations/net/city/cpp_lounge/restroom/restroom.nrmn
+|
+|- Connectors:
+|__ nc_cppl_restroom_door_s, South Door,  File: Games/netsplit/locations/net/city/cpp_lounge/restroom/connectors.nrmn
+|  |__ Destination: net_city_cpp_lounge
+|
+|
+|- Events:
+|__ c97f3c0b-f347-43c0-8e73-e05363c904ab, enter,  File: Games/netsplit/locations/net/city/cpp_lounge/restroom/restroom.nrmn
+|  |__ ActionSet: b7603218-3f37-453f-bd8a-b360b6a2a722
+|  |  |__ Action: 4c30bcc6-fb03-4b05-a19c-fb5e85ee64a1, Type=attribute
+|__ 029ada5f-be3e-4670-85b7-8e74f08c06c2, enter|look,  File: Games/netsplit/locations/net/city/cpp_lounge/restroom/restroom.nrmn
+|
+|
+|- Objects:
+|__ Mirror (nc_cppl_restroom_mirror),  File: Games/netsplit/locations/net/city/cpp_lounge/restroom/mirror.nrmn
+|__ Sinks (nc_cppl_restroom_sinks),  File: Games/netsplit/locations/net/city/cpp_lounge/restroom/sinks.nrmn
+|__ Stalls (nc_cppl_restroom_stalls),  File: Games/netsplit/locations/net/city/cpp_lounge/restroom/stalls.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (e6da79b2-219a-4fe9-b67b-f69490cadeb9)
+|
+
+Room South Hub:
+Alias: net_hub
+File: Games/netsplit/locations/net/hub/hub.nrmn
+|
+|- Connectors:
+|__ nhub_portal_n, North Portal,  File: Games/netsplit/locations/net/hub/connectors.nrmn
+|  |__ Destination: net_library_front
+|__ nhub_portal_e, East Portal,  File: Games/netsplit/locations/net/hub/connectors.nrmn
+|  |__ Destination: net_city_center
+|
+|
+|- Events:
+|__ e9a32264-465c-4b30-9f04-14dcdcfbb61a, enter|look,  File: Games/netsplit/locations/net/hub/hub.nrmn
+|
+|
+|- Objects:
+|__ Statue (nhub_statue),  File: Games/netsplit/locations/net/hub/statue.nrmn
+|__ Benches (nhub_benches),  File: Games/netsplit/locations/net/hub/benches.nrmn
+|
+|
+|- Commands:
+|__ Syntax:  look|l (ed8ae204-3499-4500-a0e9-7d575c173baa)
+|
+
+Room Sphere:
+Alias: ncc_nethub1_hub_sphere
+File: Games/netsplit/locations/net/city/nethub1/sphere/sphere.nrmn
+|
+|- Connectors:
+|__ ncc_nethub1h_sphere_exit, Exit,  File: Games/netsplit/locations/net/city/nethub1/sphere/connectors.nrmn
+|  |__ Destination: net_city_nethub1
+|
+|
+|- Events:
+|__ 18f39efb-3576-4b64-a685-00f899070e2b, enter|look,  File: Games/netsplit/locations/net/city/nethub1/sphere/sphere.nrmn
+|
+|
+|
+|
+|
+|
+|- NPCs:
+|__  (ncc_nethub1h_sphere_op),  File:
+|- Attributes:
+|__ topic, greet
+|
+|
+|- Commands:
+|__ Syntax:  look|l (f58195e6-336d-4284-a9a9-98e24aac5dc2)
+|
+
