@@ -327,6 +327,19 @@ public class Action
                     MovePlayer(cmd, act.GetNewValue(), act);
                     parsed = false;
                     break;
+
+                case "weapons":
+                    tmp = new ArrayList<String>();
+
+                    tmp.addAll(ListWeapons(cmd, parent));
+
+                    if (Functions.ListHasData(tmp))
+                    {
+                        output.addAll(tmp);
+                    }
+
+                    parsed = true;
+                    break;
             }
 
             // Parse Action Messages
@@ -395,6 +408,24 @@ public class Action
         else
         {
             output.add("You are not armed with a weapon.");
+        }
+
+        return output;
+    }
+
+    public List<String> ListWeapons(Statement cmd, Element parent)
+    {
+        List<String> output = new ArrayList<String>();
+        Object object = new Object();
+        Element player = parent.GetPlayer(parent);
+
+        if (player != null)
+        {
+            object.LoadObjects(cmd, player);
+            for (Element obj : player.GetWeapons())
+            {
+                output.add(obj.GetLabel());
+            }
         }
 
         return output;

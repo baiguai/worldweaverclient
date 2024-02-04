@@ -53,10 +53,16 @@ public class Parser
             game = null;
         }
 
+        private int histLimit = 100;
         private List<String> history = null;
         public List<String> GetHistory() { if (history == null) history = new ArrayList<String>(); return history; }
         public void SetHistory(List<String> val) { history = val; }
-        public void AppendHistory(String val) { GetHistory().add(val); }
+        public void AppendHistory(String val)
+        {
+            if (GetHistory().size() > histLimit)
+                GetHistory().remove(GetHistory().size() - 1);
+            GetHistory().add(0, val);
+        }
         public void AppendHistory(List<String> val) { GetHistory().addAll(val); }
         public void ClearHistory() { history = null; }
 
